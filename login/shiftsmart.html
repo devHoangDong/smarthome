@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-HOME</title>
+    <link rel="stylesheet" type="text/css" href="../smarthome.css">
+    <link rel="stylesheet" type="text/css" href="login-shiftsmart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/noto-sans-condensed" type="text/css"/> 
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../img/logo.jpg" href="#">
+        </div>
+        <div class="menu">
+                <div class="menu--homepage"><a href="../shiftsmart.html">Trang chủ</a></div>
+                <div>Tin tức</div>
+                <div class="dropdown1">
+                    <div>Sản phẩm</div>
+                    <div class="dropdowncontent">
+                        <a href="#">Nhà thông minh</a>
+                        <a href="#">Giải pháp an ninh</a>
+                        <a href="#">Thiết bị điện thông minh</a>
+                    </div>
+                </div>
+                <div>Công trình</div>
+                <div>Hỏi đáp</div>
+                <button class="login" onclick="location.href='shiftsmart.html'">Đăng nhập</button>
+        </div> 
+    </div>
+    <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <h2 style="text-align:center">Login with Social Media or Manually</h2>
+            <div class="vl">
+              <span class="vl-innertext">or</span>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+               </a>
+              <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+              </a>
+              <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google+
+              </a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign in manually:</p>
+              </div>
+      
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Login">
+            </div>
+            
+          </div>
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="signup.html" style="color:white" class="btn">Sign up</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white" class="btn">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="../img/logo.jpg">
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-nav">
+                    <a href="#">contact</a>
+                    <a href="#">platform</a>
+                    <a href="#">solutions</a>
+                    <a href="#">company</a>
+                    <a href="#">news</a>
+                    <a href="#">help</a>
+                </div>
+            <div class="footer-bottom-appstore">
+                <p class="footer-bottom-appstore-text1">workers</p>
+                <p class="footer-bottom-appstore-text2">Download our iPhone and Android apps to get started</p>
+                <a href="#"><img src="../img/apple-white.svg"></a>
+                <a href="#"><img src="../img/google_white.svg"></a>
+            </div>
+            </div>
+            <div class="footer-policy">
+                <div><a href="#">Privacy Policy</a>&nbsp|&nbsp</div>
+                <div><a href="#">Partners terms of service</a>&nbsp|&nbsp</div>
+                <div><a href="#">Employe terms of service</a>&nbsp|&nbsp</div>
+                <div>&#169 Smarthome. All rights reserved</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+        
+</body>
+</html>
