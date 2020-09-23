@@ -501,6 +501,8 @@ body {
 .footer .footer-logo img {
     margin-top: 170px;
     height: 100px;
+    width: 217px;
+    max-width: 100%;
     margin-left: 9.375rem;
 }
 .footer .footer-bottom {
