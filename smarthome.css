@@ -7,7 +7,10 @@ body {
     height: 70px;
     background-color: white;
     display: flex;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 .header > div {
     display: inline-flex;
@@ -31,24 +34,29 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.header .menu button {
-    background-color: #0071CE;
+.header .menu .login--contain {
+    background-color: #0071CE ;
     color: white;
-    width: 200px;
+    width: 230px;
+    height: 70px;
     border: none;
+    text-align: center;
     font-size: 16px;
     text-transform: uppercase;
+    background: linear-gradient(to right, #0F4C92 50%,  #0071CE 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.4s ease;
 }
-.header .menu button:hover {
-    cursor: pointer;
+.header .menu .login--contain a{
+    color: white;
+}
+.header .menu .login--contain:hover {
+    background-position: left bottom;
 }
 .header .menu > div:hover {
     color: #54565A;
     cursor: pointer;
-}
-@keyframes login {
-    from {background-color: #0071CE;}
-    to {background-color: #0F4C92;}
 }
 .header .menu .dropdowncontent {
     transition: 0.6s ease;
@@ -87,7 +95,8 @@ body {
     display: block;
 }
 .header .logo img {
-    max-width: 200px;
+    max-width: 100%;
+    width: 217px;
 }
 .header .logo {
     margin-left: 100px;
